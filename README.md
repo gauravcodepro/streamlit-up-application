@@ -1,5 +1,5 @@
-# universitat_potsdam_javascript_application
-a javascript application for intergation into the devops for the universitat potsdam. 
+# Universitat_potsdam_application
+a web application for intergation into the devops for the Universitat Potsdam. Coded with stash of Javascript, Bootstrap and a bit of other languages.  
 
 Gaurav Sablok \
 Academic Staff Member \

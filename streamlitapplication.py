@@ -5,12 +5,12 @@
 import streamlit as st
 
 st.set_page_config(
-                 page_title="slurm configurator",
+                 page_title="Universitat Potsdam Slurm Configurator",
                  page_icon="Universitat Potsdam",
-                 layout="wide",
+                 layout="centered",
                  initial_sidebar_state="expanded",
 )
-st.markdown("slurm confirgurator for the Universitat Potsdam")
+st.markdown("Universitat Potsdam Slurm Confirgurator for the Universitat Potsdam")
 st.markdown("developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam")
 st.markdown("generating the slurm configuration for the high performance computing")
 name = ''.join(["#","SBATCH"," ","-","J"," "]) \

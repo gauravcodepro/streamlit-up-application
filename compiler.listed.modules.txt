@@ -1,0 +1,15 @@
+compiler/Clang/11.0.1-GCCcore-10.2.0
+compiler/Clang/11.0.1-gcccuda-2020b
+compiler/GCC/7.3.0-2.30
+compiler/GCC/8.3.0
+compiler/GCC/9.3.0
+compiler/GCC/10.2.0
+compiler/GCCcore/7.3.0
+compiler/GCCcore/8.3.0
+compiler/GCCcore/9.3.0
+compiler/GCCcore/10.2.0
+compiler/Go/1.13.1
+compiler/LLVM/6.0.0-GCCcore-7.3.0
+compiler/LLVM/9.0.1-GCCcore-9.3.0
+compiler/LLVM/10.0.1-GCCcore-10.2.0
+compiler/LLVM/11.0.0-GCCcore-10.2.0

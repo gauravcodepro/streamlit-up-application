@@ -735,6 +735,5 @@ configuration = st.button("please write the slurm for analysis")
 if configuration:
     st.write(f"Your server configuration file written by Universitat Potsdam Slurm Configurator is:"
              f" {name}\n{top}\n{queue}\n{threads}\n{core}\n{memory}\n{workdir}\n{email}\n{end}\n{command}")
-
 if __name__ == "__main__":
     pass

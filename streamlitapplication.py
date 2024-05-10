@@ -738,13 +738,3 @@ if configuration:
 
 if __name__ == "__main__":
     pass
-
-#SBATCH --partition=all
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=256G
-#SBATCH --time=5-00:00
-#SBATCH --chdir=/work/sablok/grapevineassemblies/polishing
-#SBATCH --mail-type=ALL
-#SBATCH --output=slurm-%j.out

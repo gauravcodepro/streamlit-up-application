@@ -1,9 +1,0 @@
-toolchain/foss/2018b
-toolchain/foss/2020a
-toolchain/fosscuda/2018b
-toolchain/fosscuda/2020b
-toolchain/gcccuda/2020b
-toolchain/gompi/2018b
-toolchain/gompi/2020a
-toolchain/gompic/2018b
-toolchain/gompic/2020b

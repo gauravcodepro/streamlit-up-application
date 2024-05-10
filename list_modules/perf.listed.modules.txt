@@ -1,2 +1,0 @@
-perf/CubeWriter/4.6-GCCcore-10.2.0
-perf/STREAM/5.10-GCC-9.3.0

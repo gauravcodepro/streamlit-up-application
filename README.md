@@ -1,5 +1,4 @@
 # streamlit-up-application
-- a web application for intergation into the devops for the Universitat Potsdam. Exporting the image link from the moddle web [moddle](https://moodle2.uni-potsdam.de/pluginfile.php/1/theme_adaptable/logo/1708349742/Unilogo_01_60.png)
 - in future you can updated this application using the module listing and i enclose how to do that:
 ```
 for i in $(cat module2.txt | cut -f 1 -d "/" | sort | uniq -c | awk '{ print $2 }'); do grep $i module2.txt > ${i}.listed.modules.txt; done
@@ -14,7 +13,8 @@ for i in $(cat module2.txt | cut -f 1 -d "/" | sort | uniq -c | awk '{ print $2 
  ![slurm configurator3](https://github.com/gauravcodepro/streamlit-up-application/blob/main/slurm_3.png)
 
  - No need of any modules files to load. Just select your module and it will dynamixally updated the selected list to show all the sub modules listed under that module. No need of any pickle and just use this and write your configurations. 
- - **final code update tomorrow and bug fixes**.
+ - **final code update tomorrow and bug fixes** with direct submission to the slurm API.
+ - write from your computer to server and avoid logging. 
  - A **Electron application** for any server is in code development. 
 
 Gaurav  \

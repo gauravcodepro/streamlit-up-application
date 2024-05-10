@@ -20,6 +20,8 @@ core = st.selectbox("select_the_number_of_cores",["32","64","128","256"])
 queue = st.selectbox("select_the_queue_name", ['queue1', 'queue2', 'queue3'])
 threads = st.selectbox("select_the_number_of_threads", ["12","24","28","32","64","48","56"])
 memory = st.selectbox("select_the_amount_of_the_memory", ["24","32","48","56","128","256","512"])
+nodes = st.text_input("please enter the number of the nodes")
+task = st.text_input("please enter the number of the task")
 command = st.text_input("Enter_your_server_command")
 file_storage = st.text_input("please enter the file storage")
 analysis_dir = st.text_input("please enter the analysis directory")
@@ -713,22 +715,22 @@ if selected == "numlib":
     st.selectbox("selected the above", selectedmoduleavail)
 if selected == "perf":
     selectedmoduleavail = modeavail["perf"]
-    st.selectbox("selected the above", biomode)
+    st.selectbox("selected the above", selectedmoduleavail)
 if selected == "phys":
     selectedmoduleavail = modeavail["phys"]
-    st.selectbox("selected the above", biomode)
+    st.selectbox("selected the above", selectedmoduleavail)
 if selected == "system":
     selectedmoduleavail = modeavail["system"]
-    st.selectbox("selected the above", biomode)
+    st.selectbox("selected the above", selectedmoduleavail)
 if selected == "toolchain":
     selectedmoduleavail = modeavail["toolchain"]
-    st.selectbox("selected the above", biomode)
+    st.selectbox("selected the above", selectedmoduleavail)
 if selected == "tools":
     selectedmoduleavail = modeavail["tools"]
-    st.selectbox("selected the above", biomode)
+    st.selectbox("selected the above", selectedmoduleavail)
 if selected == "vis":
     selectedmoduleavail = modeavail["vis"]
-    st.selectbox("selected the above", biomode)
+    st.selectbox("selected the above", selectedmoduleavail)
 configuration = st.button("please write the slurm for analysis")
 if configuration:
     st.write(f"Your server configuration file written by Universitat Potsdam Slurm Configurator is:"
@@ -736,3 +738,13 @@ if configuration:
 
 if __name__ == "__main__":
     pass
+
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/polishing
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out

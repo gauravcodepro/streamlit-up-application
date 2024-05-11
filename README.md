@@ -1,7 +1,7 @@
 # streamlit-up-application
 
 - it is a multi page web application specifically for Universitat Potsdam DevOPs. 
-- Allows you to view and configure your own slum needs.
+- Allows you to view and configure your own slurm needs.
 - Allows you to submit the jobs to the cluster without logging into the server.
 - Allows you to see and select the modules.
 - No need of the terminal to write your configuration scripts. 

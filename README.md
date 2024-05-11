@@ -15,6 +15,7 @@ for i in $(cat module2.txt | cut -f 1 -d "/" | sort | uniq -c | awk '{ print $2 
  streamlit run streamlitapplication.py
 ```
  ![slum configurator1](https://github.com/gauravcodepro/streamlit-up-application/blob/main/slurm.png)
+ ![slum configurator1](https://github.com/gauravcodepro/streamlit-up-application/blob/main/slurm1.png)
 
  - No need of any modules files to load. Just select your module and it will dynamically updated the selected list to show all the sub modules listed under that module.
  - You can browse all the main modules and the sub-modules in the sidebar. 

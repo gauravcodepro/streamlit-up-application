@@ -10,10 +10,10 @@ st.set_page_config(
                  layout="centered",
                  initial_sidebar_state="expanded")
 st.image("https://www.uni-potsdam.de/typo3conf/ext/up_template/Resources/Public/Images/logos/up_logo_international_2.png", width = 100)
-st.markdown("Universitat Potsdam Slurm Configurator for the Universitat Potsdam")
-st.markdown("Developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam")
-st.markdown("Slurm configurator for the high performance computing")
-name = st.text_input("server-name")
+st.markdown("Universitat Potsdam Slurm Configurator for the Universitat Potsdam, Germany")
+st.markdown("Developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam, Germany")
+st.markdown("Slurm configurator for the high performance computing, Universitat Potsdam, Germany")
+username = st.text_input("server-name")
 nodes = st.text_input("number-of-nodes-required")
 task = st.text_input("number-of-task")
 cpu = st.selectbox("number-of-cpu", [i for i in range(10)])
@@ -23,6 +23,7 @@ workdir = st.text_input("work-directory")
 email = st.text_input("enter_your_email")
 command = st.text_input("server-command")
 exportpath = st.text_input("path-export")
+additionaltext = st.text_input("additional-text")
 modavail = st.sidebar.selectbox("List of the available main modules", ["bio","chem", "compiler", "custom", "data", "debugger", "devel", "lang", "lib", "math", "mpi", "numlib", "perf","phys","system","toolchain","tools","vis"])
 biolist = st.sidebar.selectbox("List of the modules available under the bio module", ['bio/ABySS/2.2.5-foss-2020b',
   'bio/AUGUSTUS/3.4.0-foss-2020b',
@@ -1380,19 +1381,21 @@ if selected == "vis":
     st.selectbox("selected the above", selectedmoduleavail)
 configuration = st.button("Run the Slurm Configurator")
 if configuration:
-    st.write(f"Your server configuration file written by Universitat Potsdam Slurm Configurator is:"
-             print (f"#!/bin/bash\n \
-# {username}\n \
-#SBATCH --partition=all\n \
-#SBATCH --nodes={nodes}\n \
-#SBATCH --ntasks={task}\n \
-#SBATCH --cpus-per-task={cpu}\n \
-#SBATCH --mem={memory}G\n \
-#SBATCH --time={time}\n \
-#SBATCH --chdir={workdir}\n \
-#SBATCH --mail-type=ALL\n \
-#SBATCH --output=slurm-%j.out\n \
-{command}\n \
-export PATH={exportpath}:$PATH\n"))
+    st.write(f"#!/bin/bash\n \
+               {username}\n \
+               #SBATCH --partition=all\n \
+               #SBATCH --nodes={nodes}\n \
+               #SBATCH --ntasks={task}\n \
+               #SBATCH --cpus-per-task={cpu}\n \
+               #SBATCH --mem={memory}G\n \
+               #SBATCH --time={time}\n \
+               #SBATCH --chdir={workdir}\n \
+               #SBATCH --mail-type=ALL\n \
+               #SBATCH --output=slurm-%j.out\n \
+               {command}\n \
+               export PATH={exportpath}:$PATH\n \
+               #{additionaltext}\n")
+st.write("thank you for using slurm configurator. please support the continous development by like, fork the repository")
+
 if __name__ == "__main__":
     pass

@@ -1,12 +1,45 @@
 
-python:S1192³"^Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompi-2018b' 3 times.(ÌÁŸ·J$92cadb90-bdaf-455b-886d-4e2c21bbd75b
-£python:S1192µ"_Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompic-2018b' 3 times.(©ÇßñùÿÿÿÿJ$bc753f6f-b752-4477-84d6-03a2b1d9403b
-¶python:S1192½"rDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.0.2-gompi-2018b-OpenBLAS-0.3.1' 3 times.(ÓÈ­ûüÿÿÿÿJ$921eaf00-4472-4025-9fa9-d1d3c19f0d8d
-“python:S1192ª"TDefine a constant instead of duplicating this literal "selected the above" 18 times.(ñ÷Õ÷J$6c8a3b72-90ec-4669-b285-dfd0031f9456
-python:S1192´"^Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompi-2020b' 3 times.(ŒÂ¦ÒJ$3ef7ab20-8426-40aa-8368-6bbc7403487f
-£python:S1192¶"_Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompic-2020b' 3 times.(”Â‚âÿÿÿÿÿJ$def3dc83-4c9a-434f-900a-17d695b3f6ee
-¢python:S1192Å"cDefine a constant instead of duplicating this literal 'numlib/imkl/2020.4.304-gompi-2020b' 3 times.(İ‰Ï×J$18f5706a-f2d9-48a4-9fea-c0c3eb4a6c70
-¢python:S1192¿"cDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.1.0-gompi-2020b' 3 times.(À­¬õJ$c160427b-2fb2-4f24-bc5f-abb9cf1657d7
-§python:S1192¾"cDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.1.0-gompi-2020a' 3 times.(›‹©ñùÿÿÿÿJ$596d27e3-9921-4b16-86a9-aa074538800d
-£python:S1192À"dDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.1.0-gompic-2020b' 3 times.(ì‘•J$9e4b49c4-e7e5-47df-b20d-7ab0acddc836
-gpython:S108ã")Either remove or fill this block of code.(ã‘Û¾J$095ebdf9-7814-4637-ae9f-5db3c7873a8f
+python:S1192Ë"mDefine a constant instead of duplicating this literal 'vis/matplotlib/3.2.1-foss-2020a-Python-3.8.2' 4 times.(Ì‹òõ8¢Í¯ö1
+python:S1192²"^Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompi-2018b' 6 times.(ÌÁŸ·J$1cd3e2e3-9705-4fa0-92d9-a13545a8bcbf
+…python:S1192Ê"`Define a constant instead of duplicating this literal 'vis/libGLU/9.0.1-GCCcore-10.2.0' 4 times.(õãôµüÿÿÿÿ8¤Í¯ö1
+Œpython:S1192Ç"gDefine a constant instead of duplicating this literal 'system/libpciaccess/0.16-GCCcore-9.3.0' 4 times.(–‰øÿÿÿÿ8¤Í¯ö1
+„python:S1192¹"eDefine a constant instead of duplicating this literal 'numlib/OpenBLAS/0.3.1-GCC-7.3.0-2.30' 4 times.(™¿™`8¥Í¯ö1
+{python:S1192ğ"VDefine a constant instead of duplicating this literal 'toolchain/gompi/2018b' 4 times.(¯ºÒæûÿÿÿÿ8¦Í¯ö1
+ƒpython:S1192±"cDefine a constant instead of duplicating this literal 'numlib/Armadillo/10.5.3-foss-2020b' 4 times.(‹„æ8¦Í¯ö1
+„python:S1192¯"_Define a constant instead of duplicating this literal 'math/libcerf/1.7-GCCcore-7.3.0' 4 times.(»É×çùÿÿÿÿ8§Í¯ö1
+†python:S1192Å"fDefine a constant instead of duplicating this literal 'system/libgcrypt/1.9.2-GCCcore-10.2.0' 4 times.(¦¼Èß8§Í¯ö1
+†python:S1192È"fDefine a constant instead of duplicating this literal 'tools/libarchive/3.4.3-GCCcore-10.2.0' 4 times.(ä³„•8¨Í¯ö1
+}python:S1192õ"]Define a constant instead of duplicating this literal 'tools/YAXT/0.9.0-gompi-2020b' 4 times.(ÌËÑÆ8©Í¯ö1
+£python:S1192´"_Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompic-2018b' 6 times.(©ÇßñùÿÿÿÿJ$02a6994c-be6a-44c1-b5f7-9dfeaaa11c41
+python:S1192ô"\Define a constant instead of duplicating this literal 'tools/IOR/3.3.0-gompi-2020b' 4 times.(ÜÆÁŠûÿÿÿÿ8ªÍ¯ö1
+€python:S1192º"`Define a constant instead of duplicating this literal 'numlib/OpenBLAS/0.3.9-GCC-9.3.0' 4 times.(ù„ƒŸ8«Í¯ö1
+‚python:S1192Ã"bDefine a constant instead of duplicating this literal 'numlib/cuDNN/8.0.4.30-CUDA-11.1.1' 4 times.(Åıáí8«Í¯ö1
+…python:S1192™"eDefine a constant instead of duplicating this literal 'compiler/Clang/11.0.1-GCCcore-10.2.0' 4 times.(‘Ë¯Î8¬Í¯ö1
+€python:S1192ö"aDefine a constant instead of duplicating this literal 'tools/ecCodes/2.20.0-gompi-2020b' 4 times.(ö§³t8¬Í¯ö1
+Œpython:S1192Æ"gDefine a constant instead of duplicating this literal 'system/libpciaccess/0.14-GCCcore-7.3.0' 4 times.(•óÕåûÿÿÿÿ8­Í¯ö1
+†python:S1192°"aDefine a constant instead of duplicating this literal 'math/libcerf/1.14-GCCcore-10.2.0' 4 times.(¨šŞğùÿÿÿÿ8®Í¯ö1
+ˆpython:S1192Á"cDefine a constant instead of duplicating this literal 'numlib/beagle-lib/3.0.2-foss-2018b' 4 times.(Õé”ßÿÿÿÿÿ8¯Í¯ö1
+¶python:S1192¼"rDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.0.2-gompi-2018b-OpenBLAS-0.3.1' 6 times.(ÓÈ­ûüÿÿÿÿJ$49443789-22b5-46d2-9258-2fdf7c05dad6
+|python:S1192ò"WDefine a constant instead of duplicating this literal 'toolchain/gompic/2018b' 4 times.(Œ©Áªıÿÿÿÿ8²Í¯ö1
+‚python:S1192»"bDefine a constant instead of duplicating this literal 'numlib/OpenBLAS/0.3.12-GCC-10.2.0' 4 times.(›†£¦8²Í¯ö1
+python:S1192¸"aDefine a constant instead of duplicating this literal 'numlib/NLopt/2.6.1-GCCcore-9.3.0' 4 times.(•Õµ¾8³Í¯ö1
+python:S1192·"_Define a constant instead of duplicating this literal 'numlib/LAPACK/3.9.1-GCC-10.2.0' 4 times.(åÈ÷¡8´Í¯ö1
+“python:S1192´
+"TDefine a constant instead of duplicating this literal "selected the above" 18 times.(ñ÷Õ÷J$c03df1ed-770e-484d-ab1e-9ba137e04b41
+‰python:S1192š"dDefine a constant instead of duplicating this literal 'compiler/Clang/11.0.1-gcccuda-2020b' 4 times.(ù÷Òüúÿÿÿÿ8µÍ¯ö1
+€python:S1192Ì"`Define a constant instead of duplicating this literal 'vis/matplotlib/3.3.3-foss-2020b' 4 times.(Œ±˜8¶Í¯ö1
+python:S1192³"^Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompi-2020b' 6 times.(ŒÂ¦ÒJ$e30d7114-45d6-4855-ae3d-3cf76f88db73
+python:S1192¶"ZDefine a constant instead of duplicating this literal 'numlib/GSL/2.6-GCC-10.2.0' 4 times.(¹™ƒÃùÿÿÿÿ8·Í¯ö1
+…python:S1192ı"eDefine a constant instead of duplicating this literal 'lib/libmatheval/1.1.11-GCCcore-9.3.0' 4 times.(ú³ğˆ8·Í¯ö1
+ˆpython:S1192Â"cDefine a constant instead of duplicating this literal 'numlib/beagle-lib/3.1.2-GCC-10.2.0' 4 times.(­´ÏŸüÿÿÿÿ8·Í¯ö1
+{python:S1192ñ"VDefine a constant instead of duplicating this literal 'toolchain/gompi/2020a' 4 times.(î‰ñÄüÿÿÿÿ8¸Í¯ö1
+python:S1192É"_Define a constant instead of duplicating this literal 'vis/libGLU/9.0.1-GCCcore-9.3.0' 4 times.(®¥‚ğ8¸Í¯ö1
+£python:S1192µ"_Define a constant instead of duplicating this literal 'numlib/FFTW/3.3.8-gompic-2020b' 6 times.(”Â‚âÿÿÿÿÿJ$05d51988-cec4-40f6-a2c4-11da48a708de
+•python:S1192À"pDefine a constant instead of duplicating this literal 'numlib/SuiteSparse/5.8.1-foss-2020b-METIS-5.1.0' 4 times.(ØÇúğúÿÿÿÿ8¹Í¯ö1
+¢python:S1192Ä"cDefine a constant instead of duplicating this literal 'numlib/imkl/2020.4.304-gompi-2020b' 6 times.(İ‰Ï×J$bff4128a-b82d-4034-b33b-d9bb21a8204e
+¢python:S1192¾"cDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.1.0-gompi-2020b' 6 times.(À­¬õJ$f769df7d-14e2-4770-acf3-a3003ad8f32d
+§python:S1192½"cDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.1.0-gompi-2020a' 6 times.(›‹©ñùÿÿÿÿJ$26d2cc14-89d1-4f5c-ab41-27d81c37bf54
+£python:S1192¿"dDefine a constant instead of duplicating this literal 'numlib/ScaLAPACK/2.1.0-gompic-2020b' 6 times.(ì‘•J$ae190f66-c76c-4c5e-9bc4-d4726e4a2a5c
+|python:S1192ó"WDefine a constant instead of duplicating this literal 'toolchain/gompic/2020b' 4 times.(Š¥Ìøÿÿÿÿ8ºÍ¯ö1
+gpython:S108í
+")Either remove or fill this block of code.(ã‘Û¾J$b7f68227-d007-4aa1-b9ac-1861cf52ab81

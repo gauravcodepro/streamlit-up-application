@@ -1381,7 +1381,7 @@ if selected == "tools":
 if selected == "vis":
     selectedmoduleavail = modeavail["vis"]
     st.selectbox("selected the above", selectedmoduleavail)
-configuration = st.button("please write the slurm for analysis")
+configuration = st.button("Run the Slurm Configurator")
 if configuration:
     st.write(f"Your server configuration file written by Universitat Potsdam Slurm Configurator is:"
              f" {name}\n{top}\n{queue}\n{threads}\n{core}\n{memory}\n{workdir}\n{email}\n{end}\n{command}")

@@ -13,19 +13,16 @@ st.image("https://www.uni-potsdam.de/typo3conf/ext/up_template/Resources/Public/
 st.markdown("Universitat Potsdam Slurm Configurator for the Universitat Potsdam")
 st.markdown("Developed by Gaurav Sablok, Academic Staff Member, Bioinformatics, Universitat Potsdam")
 st.markdown("Slurm configurator for the high performance computing")
-name = st.text_input("enter_your_name")
-email = st.text_input("enter_your_email")
-workdir = st.text_input("enter_your_working_directory")
-core = st.selectbox("select_the_number_of_cores",["32","64","128","256"])
-queue = st.selectbox("select_the_queue_name", ['queue1', 'queue2', 'queue3'])
-threads = st.selectbox("select_the_number_of_threads", ["12","24","28","32","64","48","56"])
+name = st.text_input("server-name")
+nodes = st.text_input("number-of-nodes-required")
+task = st.text_input("number-of-task")
+cpu = st.selectbox("number-of-cpu", [i for i in range(10)])
 memory = st.selectbox("select_the_amount_of_the_memory", ["24","32","48","56","128","256","512"])
-nodes = st.text_input("please enter the number of the nodes")
-task = st.text_input("please enter the number of the task")
-command = st.text_input("Enter_your_server_command")
-file_storage = st.text_input("please enter the file storage")
-analysis_dir = st.text_input("please enter the analysis directory")
-exportpath = st.text_input("please enter the path to be exported")
+time = st.text_input("job-time")
+workdir = st.text_input("work-directory")
+email = st.text_input("enter_your_email")
+command = st.text_input("server-command")
+exportpath = st.text_input("path-export")
 modavail = st.sidebar.selectbox("List of the available main modules", ["bio","chem", "compiler", "custom", "data", "debugger", "devel", "lang", "lib", "math", "mpi", "numlib", "perf","phys","system","toolchain","tools","vis"])
 biolist = st.sidebar.selectbox("List of the modules available under the bio module", ['bio/ABySS/2.2.5-foss-2020b',
   'bio/AUGUSTUS/3.4.0-foss-2020b',
@@ -1384,6 +1381,18 @@ if selected == "vis":
 configuration = st.button("Run the Slurm Configurator")
 if configuration:
     st.write(f"Your server configuration file written by Universitat Potsdam Slurm Configurator is:"
-             f" {name}\n{top}\n{queue}\n{threads}\n{core}\n{memory}\n{workdir}\n{email}\n{end}\n{command}")
+             print (f"#!/bin/bash\n \
+# {username}\n \
+#SBATCH --partition=all\n \
+#SBATCH --nodes={nodes}\n \
+#SBATCH --ntasks={task}\n \
+#SBATCH --cpus-per-task={cpu}\n \
+#SBATCH --mem={memory}G\n \
+#SBATCH --time={time}\n \
+#SBATCH --chdir={workdir}\n \
+#SBATCH --mail-type=ALL\n \
+#SBATCH --output=slurm-%j.out\n \
+{command}\n \
+export PATH={exportpath}:$PATH\n"))
 if __name__ == "__main__":
     pass

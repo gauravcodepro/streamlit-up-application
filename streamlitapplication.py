@@ -1395,7 +1395,8 @@ if configuration:
                {command}\n \
                export PATH={exportpath}:$PATH\n \
                #{additionaltext}\n")
-st.write("thank you for using slurm configurator. please support the continous development by like, fork the repository")
+st.write("thank you for using slurm configurator. please support the continous development by letting know what you want more to add in this configurator.")
+st.write("building a electron app for the slurm configurator so that you perform all native applications inclduing the directed acyclic graph (DAG) view with a username login and nothing else")
 
 if __name__ == "__main__":
     pass

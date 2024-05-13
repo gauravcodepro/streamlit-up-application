@@ -21,10 +21,8 @@ for i in $(cat module2.txt | cut -f 1 -d "/" | sort | uniq -c | awk '{ print $2 
 
  - No need of any modules files to load. Just select your module and it will dynamically updated the selected list to show all the sub modules listed under that module.
  - You can browse all the main modules and the sub-modules in the sidebar. 
-##### Footnotes
- - The complete application is due for release next week 2024-5-14. 
- - Adding the support for the direct job submission. 
- - Adding the support for the job fetcher and log fetcher. 
+
+**The application is complete and it is hosted on the cloud for access from anywhere**: [streamlit-up-devops](https://sup-application.streamlit.app/)
 
 Gaurav  \
 Academic Staff Member \

@@ -7,7 +7,7 @@ import streamlit as st
 st.set_page_config(
                  page_title="Universitat Potsdam Slurm Configurator",
                  page_icon="Universitat Potsdam",
-                 layout="centered",
+                 layout="wide",
                  initial_sidebar_state="expanded")
 st.image("https://www.uni-potsdam.de/typo3conf/ext/up_template/Resources/Public/Images/logos/up_logo_international_2.png", width = 100)
 st.header("Universitat Potsdam Slurm Configurator for the Universitat Potsdam, Germany")
@@ -18,8 +18,8 @@ nodes = st.text_input("number-of-nodes-required", help = "enter the int number s
 task = st.text_input("number-of-task", help = "enter the number of the task such as int 1,2,3")
 cpu = st.selectbox("number-of-cpu", [i for i in range(10)], help = "select the numer of the core such as 1,2,3")
 memory = st.selectbox("select_the_amount_of_the_memory", ["24","32","48","56","128","256","512"], help = "this provides the access to the amount of the memory that you want to allocate for the project run")
-time = st.text_input("job-time")
-workdir = st.text_input("work-directory", help ="enter the path to the working directory where all your files are located ")
+time = st.text_input("job-time", help="the job time and the format is 5-00:00 for days,hours and minutes")
+workdir = st.text_input("work-directory", help ="enter the path to the working directory where all your files are located")
 email = st.text_input("enter_your_email", help = "please enter your email address to which you want to be notified about the running jobs")
 command = st.text_input("server-command", help="please enter the commands that you want to execute")
 exportpath = st.text_input("path-export", help="please enter the path of the files to be exported")
@@ -1327,74 +1327,76 @@ modeavail = {'bio': ['bio/ABySS/2.2.5-foss-2020b',
   'vis/xprop/1.2.5-GCCcore-10.2.0']}
 if selected == "bio":
     selectedmoduleavail = modeavail["bio"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "chem":
     selectedmoduleavail = modeavail["chem"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "compiler":
     selectedmoduleavail = modeavail["compiler"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "custom":
     selectedmoduleavail = modeavail["custom"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "data":
     selectedmoduleavail = modeavail["data"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "debugger":
     selectedmoduleavail = modeavail["debugger"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "devel":
     selectedmoduleavail = modeavail["devel"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "lang":
     selectedmoduleavail = modeavail["lang"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "lib":
     selectedmoduleavail = modeavail["lib"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "math":
     selectedmoduleavail = modeavail["math"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "mpi":
     selectedmoduleavail = modeavail["mpi"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "numlib":
     selectedmoduleavail = modeavail["numlib"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "perf":
     selectedmoduleavail = modeavail["perf"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "phys":
     selectedmoduleavail = modeavail["phys"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "system":
     selectedmoduleavail = modeavail["system"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "toolchain":
     selectedmoduleavail = modeavail["toolchain"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "tools":
     selectedmoduleavail = modeavail["tools"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 if selected == "vis":
     selectedmoduleavail = modeavail["vis"]
-    st.selectbox("selected the above", selectedmoduleavail)
+    moduleadded = st.selectbox("selected the above", selectedmoduleavail)
 configuration = st.button("Run the Slurm Configurator")
 if configuration:
-    st.write(f"#!/bin/bash\n \
-               {username}\n \
-               #SBATCH --partition=all\n \
-               #SBATCH --nodes={nodes}\n \
-               #SBATCH --ntasks={task}\n \
-               #SBATCH --cpus-per-task={cpu}\n \
-               #SBATCH --mem={memory}G\n \
-               #SBATCH --time={time}\n \
-               #SBATCH --chdir={workdir}\n \
-               #SBATCH --mail-type=ALL\n \
-               #SBATCH --output=slurm-%j.out\n \
-               {command}\n \
-               export PATH={exportpath}:$PATH\n \
-               #{additionaltext}\n")
+    st.write(f"#!/bin/bash \
+               \n{username} \
+               \n#SBATCH --partition=all \
+               \n#SBATCH --nodes={nodes} \
+               \n#SBATCH --ntasks={task} \
+               \n#SBATCH --cpus-per-task={cpu} \
+               \n#SBATCH --mem={memory}G \
+               \n#SBATCH --time={time} \
+               \n#SBATCH --chdir={workdir} \
+               \n#SBATCH --mail-type=ALL \
+               \n#SBATCH --output=slurm-%j.out \
+               \n{command} \
+               \nexport PATH={exportpath}:$PATH \
+               \nmodule load {moduleadded} \
+               \n#{additionaltext}\n")
+
 st.write("thank you for using slurm configurator. please support the continous development by letting know what you want more to add in this configurator.")
 st.write("building a electron app for the slurm configurator so that you perform all native applications inclduing the directed acyclic graph (DAG) view with a username login and nothing else")
 

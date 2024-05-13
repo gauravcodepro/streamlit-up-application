@@ -4,6 +4,7 @@
 - Allows you to view and configure your own slurm configuration.
 - Allows you to submit the jobs to the cluster without logging into the server.
 - Allows you to see and select the modules.
+- Help options are listed on each option for selection. 
 - You can browse all the main modules and the sub-modules in the sidebar.
 - dynamically updated the selected list to show all the sub modules listed under that module.
 - It is hosted on the cloud for access from anywhere: [streamlit-up-configurator](https://sup-application.streamlit.app/)

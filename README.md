@@ -6,7 +6,7 @@
 - Allows you to see and select the modules.
 - You can browse all the main modules and the sub-modules in the sidebar.
 - dynamically updated the selected list to show all the sub modules listed under that module.
-- It is hosted on the cloud for access from anywhere**: [streamlit-up-configurator](https://sup-application.streamlit.app/)
+- It is hosted on the cloud for access from anywhere: [streamlit-up-configurator](https://sup-application.streamlit.app/)
 - New modules will be updated monthly and if you cant find your module then kindly let us know by opening a issue, fork the repository. 
 - you can updated this application using the module listing and i enclose how to do that:
 ```
